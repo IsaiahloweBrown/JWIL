@@ -1,0 +1,1659 @@
+/* 25% of viewport */
+
+/* div {
+      
+      height: 25vh;
+      width: 115rem;
+      background: blue;
+      color: #eee;
+      font-family: monospace;
+      padding: 2rem;
+      border: 3px solid black;
+    } */
+
+/* Part 1: Base Template  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background: white;
+    /* border: 5px solid black; */
+    height: 11vh;
+}
+main {
+    background: white;
+    /* border: 5px solid rgb(255, 0, 0); */
+    height: 88.3vh; 
+    width: 99vw;
+}
+
+
+.menu-area {
+    float: left;
+    width: 3%;
+    height: 100%;
+    padding-top: 1.2%;
+    /* border: 3px solid; */
+    display: none;
+}
+
+
+
+
+/* Part 2: Header Glow-up */
+.nav-area li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    font-size: 4rem;
+    padding-top: 2.5vh;
+    padding-left: 8vw;
+    /* border: 4px solid ; */
+}
+.nav-area a {
+    text-decoration: none;
+    color: black;
+}
+.apply-area {
+    float: left;
+    
+    /* border: 3px solid; */
+    height: 6vh;
+    width: 7vw;
+    
+
+}
+.apply-area a{
+    /* float: right;
+    padding-top: 0.5%;
+    padding: 0.5% 2.4%;
+    font-size: 5rem;
+    border: 3px solid;
+    border-radius: 5px; */
+    background: rgb(51, 57, 66);
+    border-radius: 5px;
+    color: white;
+    font-size: 2.5rem;
+    padding: 20% 85%;
+
+}
+.apply-area section {
+    padding-top: 15%;
+    padding-left: 25%;
+ 
+}
+
+.first-page {
+    /* border: 2px solid; */
+    width: 100%;
+    height: 90.5%;
+    background: rgb(241, 243, 245);
+}
+.first-half {
+    float: left;
+    /* border: 4px solid; */
+    width: 50%;
+    height: 100%;
+
+}
+.second-half {
+    float: left;
+    /* border: 4px solid blue; */
+    width: 50%;
+    height: 100%;
+}
+.image-area-one {
+    /* border: 3px solid; */
+    height: 50%;
+    background: rgb(241, 243, 245);
+}
+.image-area-one section {
+    height: 100%;
+    padding-bottom: 50%;
+    
+}
+.image-area-one img {
+    height: auto;
+    width: auto;
+    /* https://css-tricks.com/almanac/properties/i/image-rendering/ */
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+}
+
+
+
+.heading-area-one {
+    float: left;
+    width: 100%;
+    height: 15%;
+    /* border: 4px solid; */
+}
+.heading-area-one span{
+    font-size: 5rem;
+    padding-left: 3%;
+}
+.paragraph-area-one {
+    float: left;
+    width: 100%;
+    height: 15%;
+    /* border: 4px solid; */
+}
+.paragraph-area-one p {
+    
+    font-size: 3rem;
+    padding-left: 3%;
+    width: 85%;
+}
+.paragraph-area-two {
+    float: left;
+    width: 100%;
+    height: 5%;
+    /* border: 4px solid; */
+}
+.paragraph-area-two p {
+    
+    font-size: 2.15rem;
+    padding-left: 3%;
+    width: 100%;
+}
+.email-area-one {
+    float: left;
+    width: 65%;
+    height: 15%;
+    padding-left: 3%;
+    /* border: 4px solid; */
+}
+.email-input-one input{
+    width: 29vw;
+    height: 4.2vh;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.submit-area {
+    float: right;
+    /* border: 3px solid; */
+    width: 35%;
+    height: 15%;
+}
+.submit-area section {
+    padding-top: 1.5%;  
+}
+.submit-area a{
+    background: green;
+    background: rgb(184, 197, 207);
+    border-radius: 5px;
+    /* border-color: rgb(0, 0, 0); */
+    color: white;
+    font-size: 2.5rem;
+    padding: 2% 10%;
+}
+/* Resume on Image two in the first page */
+.image-area-two {
+    /* border: 3px solid; */
+    height: 100%;
+    background: rgb(241, 243, 245);
+}
+.image-area-two section {
+    padding-top: 6%;
+}
+.image-area-two img {
+    height: 80%;
+    width: 82.1%;
+}
+/* Second page */
+.second-page {
+    float: left;
+    height: 70%;
+    width: 100%;
+    background: white;
+    /* border: 2px solid; */
+}
+.gray-border {
+    border: 2px solid;
+    width: 40%;
+    height: 10%;
+}
+.heading-area-two {
+    float: left;
+    height: 40%;
+    width: 100%;
+    padding-top: 5%;
+    /* border: 2px solid; */
+}
+.heading-area-two p {
+    font-size: 4rem;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    /* border: 2px solid; */
+
+}
+.third-half {
+    float: left;
+    height: 30%;
+    width: 50%;
+
+  
+}
+.paragraph-three {
+    font-size: 4rem;
+    font-weight: 100;
+    width: 65%;
+    padding-left: 6%;
+    padding-top: 12%;
+    text-align: center;
+}
+.paragraph-three a {
+    padding-right: 1.0%;
+    font-size: 2.5rem;
+    font-weight: 700;
+}  
+.fourth-half {
+    float: left;
+    height: 30%;
+    width: 50%;
+    /* border: 2px solid; */
+}
+.paragraph-four {
+    font-size: 4rem;
+    font-weight: 100;
+    width: 65%;
+    padding-left: 6%;
+    padding-top: 12%;
+    text-align: center;
+}
+.paragraph-four a {
+    padding-right: 1.5%;
+    font-size: 2.5rem;
+    font-weight: 600;
+}  
+.lower-sentence-area {
+    float: left;
+    height: 20%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+.lower-sentence {
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(149, 162, 168);
+    width: 100%;
+    padding-top: 4%;
+    text-align: center;
+}
+.left-side {
+    float: left;
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid; */
+}
+/* Third page section */
+.third-page {
+    float: left;
+    height: 100%;
+    width: 100%;
+    background: rgb(241, 243, 245);
+    /* border: 2px solid; */
+}
+.heading-area-three {
+    float: left;
+    height: 9%;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.heading-area-three h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 80%;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+.paragraph-five {
+    float: right;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.paragraph-five p {
+    font-size: 2.9rem;
+    width: 99%;
+    padding-left: 3%;
+    padding-bottom: 1.5%;
+    line-height: 130%;
+}
+.right-side {
+    float: right;
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid; */
+}
+.history-img-one {
+    height: 35%;
+    width: 100%;
+    padding-left: 20%;
+    /* border: 2px solid; */
+    padding-top: 5%;
+}
+.photo-caption-one {
+    height: 5%;
+    width: 100%;
+    /* border: 2px solid; */
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: rgb(185, 190, 193);
+}
+.history-img-two {
+    height: 35%;
+    width: 100%;
+    padding-left: 20%;
+    /* border: 2px solid; */
+    padding-top: 4%;
+}
+.photo-caption-two {
+    height: 5%;
+    width: 100%;
+    /* border: 2px solid; */
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: rgb(185, 190, 193);
+}
+/* Fourth page section */
+.fourth-page {
+    float: left;
+    height: 100%;
+    width: 100%;
+    background: white;
+    /* border: 2px solid; */
+}
+.heading-area-four {
+    float: left;
+    height: 15%;
+    width: 100%;
+    background: white;
+    /* border: 2px solid; */
+    padding-top: 2%;
+}
+.heading-area-four span {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left: 45%;
+    /* padding-top: 55%; */
+}
+.top-area {
+    float: left;
+    height: 45%;
+    width: 100%;
+    background: white;
+    /* border: 2px solid;     */
+}
+.top-border {
+    height: 100%;
+    width: 80%;
+    border: 4px solid rgb(143, 139, 141); 
+    margin: 0 auto;
+
+}
+.top-image-area {
+    float: left;
+    height: 100%;
+    width: 22%;
+    /* border: 2px solid;   */
+}
+.top-image-area img {
+    height: 95%;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+.top-name {
+    float: right;
+    height: 15%;
+    width: 78%;
+    font-size: 3rem;
+    padding-top: 1%;
+    /* border: 2px solid;    */
+}
+.top-paragraph {
+    float: right;
+    height: 85%;
+    width: 78%;
+    font-size: 3rem;
+    font-weight: 500;
+    /* border: 2px solid blue;    */
+}
+.bottom-area {
+    float: left;
+    height: 55%;
+    width: 100%;
+    background: white;
+    /* border: 2px solid;   */
+}
+.heading-area-six {
+    float: left;
+    height: 15%;
+    width: 50%;
+    font-size: 3.5rem;
+    font-weight: 100;
+    padding-top: 1.5%;
+    color: rgb(136, 139, 141);
+    /* border: 2px solid; */
+}
+.heading-area-seven {
+    float: left;
+    height: 15%;
+    width: 50%;
+    font-size: 3.5rem;
+    font-weight: 100;
+    padding-top: 0.90%;
+    color: rgb(136, 139, 141);
+    /* border: 2px solid; */
+}
+.big-heading {
+    height: 15%;
+    width: 50%;
+    font-size: 2.7rem;
+    font-weight: 100;
+    /* border: 2px solid; */
+}
+.gray-line {
+    width: 14%;
+    border-bottom: 2px solid rgb(136, 139, 141);
+}
+.mini-heading {
+    float: left;
+    height: 15%;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-top: 0.5%;
+    color: rgb(136, 139, 141);
+    /* border: 2px solid; */
+}
+.paragraph-six, .paragraph-seven {
+    float: left;
+    height: 70%;
+    width: 50%;
+    font-size: 4.7rem;
+    font-weight: 100;
+    padding-top: 2%;
+    /* border: 2px solid; */
+}
+.lower-banner {
+    float: left;
+    width: 100%;
+    height: 7%;
+    /* border: 2px solid; */
+    background: rgb(184, 197, 208);
+}
+.sign-up {
+    float: left;
+    width: 35%;
+    height: 100%;
+    /* border: 2px solid; */
+    color:white;
+    padding-top: 0.5%;
+}
+.sign-up span {
+    font-size: 2.5rem;
+    padding-left: 15%;
+}
+.email-area-two {
+    float: left;
+    width: 33%;
+    height: 100%;
+    /* padding-left: 6%; */
+    /* border: 4px solid; */
+}
+.email-input-two input{
+    width: 32vw;
+    height: 4vh;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.email-area-two section {
+    padding-top: 0.5%;  
+}
+.submit-area-two {
+    float: right;
+    /* border: 3px solid; */
+    width: 31%;
+    height: 100%;
+}
+.submit-area-two section {
+    padding-top: 2%;  
+}
+.submit-area-two a{
+    background: rgb(143, 156, 163);
+    border-radius: 2px;
+    /* border-color: rgb(0, 0, 0); */
+    color: white;
+    font-size: 2rem;
+    padding: 1% 7%;
+    text-decoration: none;
+}
+/* footer {
+
+    background: rgb(143, 156, 163);
+    width: 100%;
+    clear: both;
+    height: 20vh;
+    margin-bottom: 0px;
+} */
+.fake-footer {
+    clear: both;
+    background: rgb(143, 156, 163);
+    width: 100%;
+    padding-top: 10%;
+}
+.top-footer {
+    float: left;
+    width: 100%;
+    background: rgb(143, 156, 163);
+    color: white;
+    font-size: 4rem;
+    /* border: 3px solid red; */
+    /* padding-left: 15%; */
+}
+.copyright {
+    float: left;
+    width: 70%;
+    /* border: 3px solid red; */
+}
+.youtube, .facebook, .newsletter {
+    float: left;
+    width: 10%;
+}
+.bottom-footer {
+    float: left;
+    width: 100%;
+    /* border: 3px solid red; */
+    background: rgb(143, 156, 163);
+}
+.first-block {
+    float: left;
+    width: 15%;
+    height: 100%;
+    /* border: 3px solid red; */
+    color: white;
+    font-size: 4rem;
+}
+.home span {
+    font-weight: 700;
+}
+.second-block {
+    float: left;
+    width: 15%;
+    height: 100%;
+    /* border: 3px solid red; */
+    color: white;
+    font-size: 4rem;
+}
+.program span {
+    font-weight: 700;
+}
+.third-block {
+    float: left;
+    width: 15%;
+    height: 100%;
+    /* border: 3px solid red; */
+    color: white;
+    font-size: 4rem;
+}
+.history span {
+    font-weight: 700;
+}
+.fellows-area, .news, .contact, .characters {
+    float: left;
+    width: 13%;
+    height: 100%;
+    /* border: 3px solid red; */
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+MEDIA 
+MEDIA
+MEDIA
+QUERIES
+QUERIES
+QUERIES
+
+BECAUSE I LOSE MYSELF IN THE QUERIES XD
+
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Nav Bar */
+    
+    
+    
+    /* First page starts */
+    /* header */
+    .menu-area {
+        display: block;
+        width: 70%;
+        padding-top: 6%;
+    }
+    .apply-area {
+        padding-top: 6%;
+    }
+    .nav-area {
+        display: none;
+    }
+    /* Hidden Images */
+    .image-area-two {
+       display: none;
+    } 
+    .image-area-one  {
+        /* border: 3px solid; */
+        height: 30%;
+    }
+    .image-area-one img {
+      
+        width: 100%;
+        /* border: 3px solid; */
+    }
+    .history-img-one, .history-img-two {
+        display: none;
+    }
+    /*  */
+    .first-half {
+        width: 100%;
+    
+    }
+    .second-half {
+        display: none;
+    }
+    .heading-area-one {
+        height: 10%;
+        padding-top: 2%;
+    }
+    .paragraph-area-one {
+        height: 20%;
+    }
+    .paragraph-area-two {
+        height: 10%;
+    }
+    .email-input-one input{
+        width: 60vw;
+        height: 3.5vh;
+    }
+    .heading-area-one span {
+     
+        font-size: 1.65rem;
+    }
+    .paragraph-area-one p {
+        font-size: 2rem;
+    }
+    .paragraph-area-two p {
+        font-size: 1.5rem;
+    }
+      /* First page ends */
+      /* ------------------------------- */
+
+      /* Second page starts */
+      .heading-area-two p {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+      .heading-area-two {
+        height:12%
+      }
+      .third-half, .fourth-half {
+        width: 100%;
+        /* border: 3px solid */
+      }
+      .paragraph-three , .paragraph-four  {
+        margin: 0 15%;
+        
+      }
+     .paragraph-three p, .paragraph-four p {
+        font-size: 1.5rem;
+        text-align: center;
+        
+      }
+      .paragraph-three a, .paragraph-four a {
+        font-size: 1.5rem;
+      }
+      .lower-sentence {
+        font-size: 2.5rem;
+      }
+
+      /* Third page starts */
+
+      .right-side {
+        display: none;
+      }
+      .left-side {
+        width: 100%;
+      }
+      .heading-area-three h2 {
+        text-align: center;
+        padding-left: 21%;
+      }
+      .paragraph-five {
+        height: 65%
+      }
+      .paragraph-five p {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+
+       /* Third page begins */
+       .heading-area-four {
+            height: 10%;
+       }
+       .heading-area-four span {
+                font-size: 2.2rem;
+                padding-left: 35%;
+       }
+       .top-border {
+            width: 100%;
+       }
+       .top-image-area {
+            height: 25%;
+            width: 100%;
+            padding-left: 33%;
+       }
+       .top-image-area img {
+         
+            width: 50%
+       }
+       .top-name {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            font-size: 1.75rem;
+        
+       }
+       .top-paragraph {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.3rem;
+       }
+       .heading-area-six {
+            width: 100%;
+       }
+       .heading-area-seven {
+            display: none;
+       }
+       .paragraph-six, .paragraph-seven {
+            width: 100%;
+            height: 25%;
+       }
+       .paragraph-six p, .paragraph-seven p {
+            font-size: 1rem;
+       }
+
+
+       
+       /* Fake Footer */
+
+       .copyright {
+            width: 100%;
+            font-size: 1.8rem;
+       }
+       .youtube, .facebook, .newsletter {
+            display: none;
+       }
+       .first-block, .second-block, .third-block {
+            width: 100%;
+            height: 5%;
+            font-size: 2rem;
+       }
+       .fellows-area, .news, .contact, .characters {
+            display: none;
+       }
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+    /* Nav Bar */
+    
+    
+    
+    /* First page starts */
+    /* header */
+    .menu-area {
+        display: block;
+        width: 70%;
+        padding-top: 6%;
+    }
+    .apply-area {
+        padding-top: 6%;
+    }
+    .nav-area {
+        display: none;
+    }
+    /* Hidden Images */
+    .image-area-two {
+       display: none;
+    } 
+    .image-area-one  {
+        /* border: 3px solid; */
+        height: 25%;
+    }
+    .image-area-one img {
+      
+        width: 100%;
+        /* border: 3px solid; */
+    }
+    .history-img-one, .history-img-two {
+        display: none;
+    }
+    /*  */
+    .first-half {
+        width: 100%;
+    
+    }
+    .second-half {
+        display: none;
+    }
+    .heading-area-one {
+        height: 10%;
+        padding-top: 2%;
+    }
+    .paragraph-area-one {
+        height: 20%;
+    }
+    .paragraph-area-two {
+        height: 10%;
+    }
+    .email-input-one input{
+        width: 60vw;
+        height: 3.5vh;
+    }
+    .heading-area-one span {
+     
+        font-size: 1.65rem;
+    }
+    .paragraph-area-one p {
+        font-size: 2rem;
+    }
+    .paragraph-area-two p {
+        font-size: 1.8rem;
+    }
+      /* First page ends */
+      /* ------------------------------- */
+
+      /* Second page starts */
+      .heading-area-two p {
+        font-size: 2rem;
+        width: 100%;
+      }
+      .heading-area-two {
+        height:12%
+      }
+      .third-half, .fourth-half {
+        width: 100%;
+        /* border: 3px solid */
+      }
+      .paragraph-three , .paragraph-four  {
+        margin: 0 15%;
+        
+      }
+     .paragraph-three p, .paragraph-four p {
+        font-size: 2rem;
+        text-align: center;
+        
+      }
+      .paragraph-three a, .paragraph-four a {
+        font-size: 2rem;
+      }
+      .lower-sentence {
+        font-size: 3rem;
+      }
+
+      /* Third page starts */
+
+      .right-side {
+        display: none;
+      }
+      .left-side {
+        width: 100%;
+      }
+      .heading-area-three h2 {
+        text-align: center;
+        padding-left: 21%;
+      }
+      .paragraph-five {
+        height: 65%
+      }
+      .paragraph-five p {
+        font-size: 1.7rem;
+        text-align: center;
+      }
+
+       /* Third page begins */
+       .heading-area-four {
+            height: 10%;
+       }
+       .heading-area-four span {
+                font-size: 2.5rem;
+                padding-left: 35%;
+       }
+       .top-border {
+            width: 100%;
+       }
+       .top-image-area {
+            height: 25%;
+            width: 100%;
+            padding-left: 37%;
+       }
+       .top-image-area img {
+         
+            width: 30%;
+            height: 90px;
+       }
+       .top-name {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            font-size: 2.25rem;
+            height: 7%;
+        
+       }
+       .top-paragraph {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.9rem;
+       }
+       .heading-area-six {
+            width: 100%;
+       }
+       .heading-area-seven {
+            display: none;
+       }
+       .paragraph-six, .paragraph-seven {
+            width: 100%;
+            height: 25%;
+       }
+       .paragraph-six p, .paragraph-seven p {
+            font-size: 1.5rem;
+       }
+
+
+       
+       /* Fake Footer */
+
+       .copyright {
+            width: 100%;
+            font-size: 2rem;
+       }
+       .youtube, .facebook, .newsletter {
+            display: none;
+       }
+       .first-block, .second-block, .third-block {
+            width: 100%;
+            height: 5%;
+            font-size: 2.5rem;
+       }
+       .fellows-area, .news, .contact, .characters {
+            display: none;
+       }
+}
+
+@media (min-width: 576px) and (max-width: 757px) {
+    /* Nav Bar */
+    
+    
+    
+    /* First page starts */
+    /* header */
+    .menu-area {
+        display: block;
+        width: 70%;
+        padding-top: 6%;
+    }
+    .apply-area {
+        padding-top: 6%;
+    }
+    .nav-area {
+        display: none;
+    }
+    /* Hidden Images */
+    .image-area-two {
+       display: none;
+      
+    } 
+    .image-area-one  {
+        height: 100%;
+        padding-bottom: 50%;
+        max-height: 200px;
+        
+    }
+    .image-area-one  {
+        /* border: 3px solid; */
+        height: 25%;
+        position: relative;
+       
+    }
+    .image-area-one img {
+      
+        width: 100%;
+      
+        /* border: 3px solid; */
+    }
+    .history-img-one, .history-img-two {
+        display: none;
+    }
+    /*  */
+    .first-half {
+        width: 100%;
+    
+    }
+    .second-half {
+        display: none;
+    }
+    .heading-area-one {
+        height: 10%;
+        padding-top: 2%;
+    }
+    .paragraph-area-one {
+        height: 20%;
+    }
+    .paragraph-area-two {
+        height: 10%;
+    }
+    .email-input-one input{
+        width: 60vw;
+        height: 3.5vh;
+    }
+    .heading-area-one span {
+     
+        font-size: 1.65rem;
+    }
+    .paragraph-area-one p {
+        font-size: 2rem;
+    }
+    .paragraph-area-two p {
+        font-size: 1.8rem;
+    }
+      /* First page ends */
+      /* ------------------------------- */
+
+      /* Second page starts */
+      .heading-area-two p {
+        font-size: 2rem;
+        width: 100%;
+      }
+      .heading-area-two {
+        height:12%
+      }
+      .third-half, .fourth-half {
+        width: 100%;
+        /* border: 3px solid */
+      }
+      .paragraph-three , .paragraph-four  {
+        margin: 0 15%;
+        
+      }
+     .paragraph-three p, .paragraph-four p {
+        font-size: 2rem;
+        text-align: center;
+        
+      }
+      .paragraph-three a, .paragraph-four a {
+        font-size: 2rem;
+      }
+      .lower-sentence {
+        font-size: 3rem;
+      }
+
+      /* Third page starts */
+
+      .right-side {
+        display: none;
+      }
+      .left-side {
+        width: 100%;
+      }
+      .heading-area-three h2 {
+        text-align: center;
+        padding-left: 21%;
+      }
+      .paragraph-five {
+        height: 65%
+      }
+      .paragraph-five p {
+        font-size: 1.9rem;
+        text-align: center;
+      }
+
+       /* Third page begins */
+       .heading-area-four {
+            height: 10%;
+       }
+       .heading-area-four span {
+                font-size: 2.5rem;
+                padding-left: 35%;
+       }
+       .top-border {
+            width: 100%;
+       }
+       .top-image-area {
+        height: 25%;
+        width: 100%;
+        padding-left: 37%;
+     }
+       .top-image-area img {
+     
+        width: 30%;
+        height: 90px;
+     }
+       .top-name {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            font-size: 2.25rem;
+            height: 7%;
+        
+       }
+       .top-paragraph {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.9rem;
+       }
+       .heading-area-six {
+            width: 100%;
+       }
+       .heading-area-seven {
+            display: none;
+       }
+       .paragraph-six, .paragraph-seven {
+            width: 100%;
+            height: 25%;
+       }
+       .paragraph-six p, .paragraph-seven p {
+            font-size: 1.5rem;
+       }
+
+
+       
+       /* Fake Footer */
+
+       .copyright {
+            width: 100%;
+            font-size: 2rem;
+       }
+       .youtube, .facebook, .newsletter {
+            display: none;
+       }
+       .first-block, .second-block, .third-block {
+            width: 100%;
+            height: 5%;
+            font-size: 2.5rem;
+       }
+       .fellows-area, .news, .contact, .characters {
+            display: none;
+       }
+}
+
+@media (min-width: 758px) and (max-width: 1024px) {
+    .remove {
+        display: none;
+    }
+    .apply-area section {
+        padding-top: 2.2vh;
+    }
+
+    .nav-area li {
+    
+        padding-left: 9vw;
+        /* border: 4px solid ; */
+    }
+
+    /* Stuff re-copied here from above*/
+        /* Hidden Images */
+        .image-area-two {
+            display: none;
+           
+         } 
+         .lower-banner{
+            background: transparent;
+            display: none;
+         }
+         .image-area-one  {
+             height: 100%;
+             padding-bottom: 30%;
+             max-height: 300px ;
+             
+         }
+         .image-area-one  {
+             /* border: 3px solid; */
+             height: 20%;
+            
+         }
+         .image-area-one img {
+           
+             width: 100%;
+           
+             /* border: 3px solid; */
+         }
+         .history-img-one, .history-img-two {
+             display: none;
+         }
+         /*  */
+         .first-half {
+             width: 100%;
+         
+         }
+         .second-half {
+             display: none;
+         }
+         .heading-area-one {
+             height: 10%;
+             padding-top: 2%;
+         }
+         .paragraph-area-one {
+             height: 20%;
+         }
+         .paragraph-area-two {
+             height: 10%;
+         }
+         .email-input-one input{
+             width: 60vw;
+             height: 3.5vh;
+         }
+         .heading-area-one span {
+          
+             font-size: 1.65rem;
+         }
+         .paragraph-area-one p {
+             font-size: 2rem;
+         }
+         .paragraph-area-two p {
+             font-size: 1.8rem;
+         }
+           /* First page ends */
+           /* ------------------------------- */
+     
+           /* Second page starts */
+           .heading-area-two p {
+             font-size: 2rem;
+             width: 100%;
+           }
+           .heading-area-two {
+             height:12%
+           }
+           .third-half, .fourth-half {
+             width: 100%;
+             /* border: 3px solid */
+           }
+           .paragraph-three , .paragraph-four  {
+             margin: 0 15%;
+             
+           }
+          .paragraph-three p, .paragraph-four p {
+             font-size: 2rem;
+             text-align: center;
+             
+           }
+           .paragraph-three a, .paragraph-four a {
+             font-size: 2rem;
+           }
+           .lower-sentence {
+             font-size: 3rem;
+           }
+     
+           /* Third page starts */
+     
+           .right-side {
+             display: none;
+           }
+           .left-side {
+             width: 100%;
+           }
+           .heading-area-three h2 {
+             text-align: center;
+             padding-left: 21%;
+           }
+           .paragraph-five {
+             height: 65%
+           }
+           .paragraph-five p {
+             font-size: 1.9rem;
+             text-align: center;
+           }
+     
+            /* Third page begins */
+            .heading-area-four {
+                 height: 10%;
+            }
+            .heading-area-four span {
+                     font-size: 2.5rem;
+                     padding-left: 35%;
+            }
+            .top-border {
+                 width: 100%;
+                 height: 100%;
+            }
+            .top-image-area {
+                 height: 25%;
+                 width: 50%;
+                 
+            }
+            .top-image-area img {
+              
+                 width: auto;
+                 height: auto;
+            }
+            .top-name {
+                 margin: 0 auto;
+                 width: 50%;
+                 text-align: center;
+                 font-size: 2.25rem;
+                 height: 7%;
+             
+            }
+            .top-paragraph {
+                 width: 50%;
+                 margin: 0 auto;
+                 font-size: 1.9rem;
+            }
+            .heading-area-six {
+                 width: 100%;
+            }
+            .heading-area-seven {
+                 display: none;
+            }
+            .paragraph-six, .paragraph-seven {
+                 width: 100%;
+                 height: 25%;
+            }
+            .paragraph-six p, .paragraph-seven p {
+                 font-size: 1.5rem;
+            }
+     
+     
+            
+            /* Fake Footer */
+     
+            .copyright {
+                 width: 100%;
+                 font-size: 2.5rem;
+            }
+            .youtube, .facebook, .newsletter {
+                 display: none;
+            }
+            .first-block, .second-block, .third-block {
+                 width: 100%;
+                 height: 5%;
+                 font-size: 3rem;
+            }
+            .fellows-area, .news, .contact, .characters {
+                 display: none;
+            }
+}
+
+@media (min-width: 1025px) and (max-width: 1579px) {
+
+    /* Header area starts */
+    .remove {
+        display: none;
+    }
+    #show {
+        display: block;
+    }
+    .apply-area {
+        padding-top:2.4vh
+    }
+
+
+    /* First page starts on Laptop */
+    .image-area-two {
+        display: none;
+    }
+    .second-half {
+        display: none;
+    }
+    .first-half {
+        width: 100%;
+    }
+    .image-area-one img {
+        padding-left: 10%;
+    }
+    .heading-area-one span {
+        font-size: 5rem;
+        padding-left: 10%;
+    }
+    .paragraph-area-one p {
+        padding-left: 10%;
+    }
+    .paragraph-area-two p {
+        padding-left: 10%;
+    }
+    .email-area-one section {
+        padding-left: 12%;
+    }
+    .email-area-one input {
+        width: 52vw;
+        height: 4.4vh;
+      
+    }
+    .heading-area-two {
+        padding-left: 5% ;
+    }
+
+    /* Third page starts because two is okay */
+    .left-side {
+        width: 65%;
+    }
+    .right-side {
+        width: 35%;
+    }
+    .history-img-one, .history-img-two {
+        padding: 0;
+        margin-top: 10%;
+    }
+    .paragraph-five p {
+        font-size: 2rem;
+    }
+    /* Fourth page starts */
+    .top-border {
+        width: 100%;
+        height: 100%;
+   }
+   .top-image-area {
+        height: 25%;
+        width: 50%;
+        
+   }
+   .top-image-area img {
+     
+        width: auto;
+        height: auto;
+   }
+   .top-name {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        font-size: 2.7rem;
+        height: 7%;
+    
+   }
+   .top-paragraph {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 2.2rem;
+   }
+   .heading-area-six {
+        width: 50%;
+   }
+   .heading-area-seven {
+        width: 50%;
+   }
+   .paragraph-six, .paragraph-seven {
+        width: 49%;
+        height: 35%;
+   }
+   .paragraph-six p, .paragraph-seven p {
+        font-size: 1.5rem;
+   }
+
+   .sign-up span {
+        font-size: 2rem;
+   }
+
+   /* footer starts  */
+   .fake-footer {
+    padding-top: 16%;
+   }
+   /* .fake-footer span {
+        font-size: 52.5;
+   } */
+}
+
+@media (min-width: 1580px) and (max-width: 1920px) {
+
+    /* Header area starts */
+    /* .remove {
+        display: none;
+    }
+    #show {
+        display: block;
+    }
+    .apply-area {
+        padding-top:2.4vh
+    } */
+    .nav-area li {
+        padding-left: 6.5vw;
+    }
+
+
+    /* First page starts on Laptop */
+    .image-area-two img {
+        height: 100%;
+        width: 100%;
+    }
+    .heading-area-one span {
+        font-size: 4rem;
+    }
+    /* .second-half {
+        display: none;
+    } */
+    /* .first-half {
+        width: 100%;
+    } */
+    /* .image-area-one img {
+        padding-left: 10%;
+    }
+ 
+    .paragraph-area-one p {
+        padding-left: 10%;
+    }
+    .paragraph-area-two p {
+        padding-left: 10%;
+    }
+    .email-area-one section {
+        padding-left: 12%;
+    }
+    .email-area-one input {
+        width: 52vw;
+        height: 4.4vh;
+      
+    }
+    .heading-area-two {
+        padding-left: 5% ;
+    } */
+
+    /* Third page starts because two is okay */
+    .left-side {
+        width: 65%;
+    }
+    .right-side {
+        width: 35%;
+    }
+    .history-img-one, .history-img-two {
+  
+        margin-top: 10%;
+    }
+    .paragraph-five p {
+        font-size: 2.5rem;
+    }
+    /* Fourth page starts */
+    .top-border {
+        width: 100%;
+        height: 100%;
+   }
+   .top-image-area {
+        height: 30%;
+        width: 50%;
+        
+   }
+   .top-image-area img {
+     
+        width: auto;
+        height: auto;
+   }
+   .top-name {
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        font-size: 4rem;
+        height: 7%;
+        padding-bottom: 4% ;
+    
+   }
+   .top-paragraph {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 2.4rem;
+   }
+   .heading-area-six {
+        width: 50%;
+   }
+   .heading-area-six {
+        padding-left: 1%;
+   }
+   .heading-area-seven {
+        width: 50%;
+   }
+   .paragraph-six, .paragraph-seven {
+        width: 49%;
+        height: 35%;
+   }
+   .paragraph-six p, .paragraph-seven p {
+        margin: 2%;
+        font-size: 2.5rem;
+   }
+
+   .sign-up span {
+        font-size: 2rem;
+   }
+
+}
+
+
+
+
+
+

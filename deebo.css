@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(241, 243, 245);
+}
+
+header, footer {
+    height: 150px;
+    border: 3px solid blue;
+}
+
+.header-area {
+  
+    background: white;
+    
+}
+
+.nav-bar-area ul {
+    border: 3px solid red;
+}
+
+
+.nav-bar-area li{
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 2%;
+ 
+    margin: 3%;
+    font-size: 1.5rem;
+    
+
+}
+
+.apply-button-area a {
+    background: rgb(51, 57, 66) ;
+    width:45%;
+    height: 100%;
+    border-radius: 5px;
+ 
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.9%;
+}
+
+.apply-button-area section {
+    padding-top: 3%;
+
+}
+
+main {
+    float: left;
+    width: 100%;
+    height: 900px
+    
+}
+
+.first-page, .second-page, .third-page {
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+
+.first-half, .second-half {
+    float: left;
+    height: 600px;
+    width: 50%;
+    border: 4px solid yellow;
+}
+
+.logo-area {
+    float: left;
+    width: 50%;
+    border: 3px solid blue;
+    height: 200px;
+}
+
+.logo-area img {
+    padding-top: 2%;
+    float: right;
+    min-height: 50%;
+    width: 50%;
+}
+
+.first-page-heading {
+
+    float: left;
+    font-size: 2rem;
+    height: 50px;
+}
+
+.first-page-span-one {
+    float: left;
+    padding-top: 2%;
+    font-size: 1.5rem;
+    height: 100px;
+}
+
+.first-page-span-two {
+    float: left;
+    padding-top: 2%;
+    font-size: 1rem;
+    height: 100px;
+}
+
+
+@media screen and (max-width: 480px) {
+    /* .rectangle-area-one section, .rectangle-area-two section {
+        width: 100%;
+    }
+    
+    li {
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    } */
+
+    nav {
+        display: none;
+    }
+ }
+
+
+ @media screen and (max-width: 757px) {
+    /* .rectangle-area-one section, .rectangle-area-two section {
+        width: 100%;
+    }
+    
+    li {
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    } */
+
+    .first-page  section {
+        width: 100%;
+    }
+ }
+
+ 
+ @media (min-width: 768px) and (max-width: 1023px) {
+    /* .rectangle-area-one section, .rectangle-area-two section {
+        width: 100%;
+    }
+    
+    li {
+        display: block;
+    }
+    .hamburger-menu{
+        display: none;
+    } */
+ }
